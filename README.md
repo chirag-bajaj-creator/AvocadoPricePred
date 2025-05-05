@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avocado Sales Prediction - README</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background: #fff; color: #333; }
-    h1, h2 { color: #2c3e50; }
-    code, pre { background: #f4f4f4; padding: 8px; border-radius: 4px; }
-    pre { overflow-x: auto; }
-    ul, ol { margin-left: 20px; }
-  </style>
+ 
 </head>
 <body>
 
