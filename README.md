@@ -1,42 +1,61 @@
-# AvocadoPricePred
-Dataset
-The dataset used for this project is the Avocado Prices dataset, available on Kaggle. It contains information about avocado prices across different regions of the United States from 2015 to 2018. The dataset includes the following features:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avocado Sales Prediction - README</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background: #fff; color: #333; }
+    h1, h2 { color: #2c3e50; }
+    code, pre { background: #f4f4f4; padding: 8px; border-radius: 4px; }
+    pre { overflow-x: auto; }
+    ul, ol { margin-left: 20px; }
+  </style>
+</head>
+<body>
 
-Date: The date of the avocado sale.
-AveragePrice: The average price of an avocado.
-Type: The type of avocado (organic or conventional).
-Year: The year of the sale.
-Region: The region where the avocado was sold.
-Total Volume: The total number of avocados sold.
-4046: The total number of avocados with PLU code 4046 (a specific variety of avocado).
-4225: The total number of avocados with PLU code 4225 (another variety).
-4770: The total number of avocados with PLU code 4770 (another variety).
-Technologies Used
-Python: The primary programming language.
-Libraries:
-pandas: Data manipulation and analysis.
-numpy: Numerical operations.
-matplotlib and seaborn: Data visualization.
-scikit-learn: Machine learning models and evaluation.
-xgboost: Gradient boosting machine for model training.
-Jupyter Notebook: For exploratory data analysis and model development.
-Project Steps
-1. Data Preprocessing
-Load the dataset and clean the data (e.g., handling missing values, converting date columns, etc.).
-Perform feature engineering such as encoding categorical variables (e.g., region and type) and creating additional time-based features.
-2. Data Exploration
-Visualize trends in avocado prices over time and by region.
-Perform correlation analysis to understand the relationships between features.
-3. Model Development
-Split the dataset into training and testing sets.
-Train multiple models including:
-Linear Regression
-Decision Tree Regressor
-Gradient Boosting Regressor
-XGBoost Regressor
-Use stacking (model ensembling) for improved performance.
-4. Model Evaluation
-Evaluate the models using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R2).
-Choose the best-performing model based on test set results.
-5. Model Interpretation and Prediction
-Interpret the model’s predictions and identify key factors influencing avocado prices.
+  <h1>🥑 Avocado Sales Prediction</h1>
+
+  <h2>📌 Overview</h2>
+  <p>This project predicts avocado sales using historical data. Various preprocessing, feature engineering, and modeling techniques are applied to forecast outcomes such as sales volumes and regional trends.</p>
+
+  <h2>📁 Files</h2>
+  <ul>
+    <li><code>avocado.csv</code> – Dataset containing avocado sales information</li>
+    <li><code>Avocado_pred.ipynb</code> – Jupyter notebook with data analysis and machine learning pipeline</li>
+  </ul>
+
+  <h2>⚙️ Requirements</h2>
+  <pre><code>pandas
+numpy
+scikit-learn
+matplotlib
+missingno
+scipy</code></pre>
+
+  <h2>🚀 How to Run</h2>
+  <ol>
+    <li>Install required libraries:</li>
+    <pre><code>pip install pandas numpy scikit-learn matplotlib missingno scipy</code></pre>
+    <li>Launch Jupyter Notebook:</li>
+    <pre><code>jupyter notebook</code></pre>
+    <li>Open <code>Avocado_pred.ipynb</code> and run all cells.</li>
+  </ol>
+
+  <h2>🔍 Key Steps</h2>
+  <ul>
+    <li>Data preprocessing (handling missing values, encoding)</li>
+    <li>Feature engineering (OneHotEncoder, PolynomialFeatures, PCA)</li>
+    <li>Model training (Decision Tree Classifier)</li>
+    <li>Cross-validation and accuracy evaluation</li>
+  </ul>
+
+  <h2>📈 Sample Output</h2>
+  <p>The model outputs predictions for sales based on region, year, and avocado type.</p>
+  <pre><code>Accuracy Score: 0.89 (example)</code></pre>
+
+  <h2>✍️ Author</h2>
+  <p><strong>Chirag Bajaj</strong> – B.Tech CSE (AI) | Avocado Insights with AI</p>
+
+</body>
+</html>
